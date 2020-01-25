@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Orazbay Ualesh</title>
-    <!-- Core CSS file -->
     <link rel="stylesheet" href="dist/photoswipe.css">
-
-    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-     In the folder of skin CSS file there are also:
-     - .png and .svg icons sprite, 
-     - preloader.gif (for browsers that do not support CSS animations) -->
     <link rel="stylesheet" href="dist/default-skin/default-skin.css">
-
-    <!-- Core JS file -->
     <script src="dist/photoswipe.min.js"></script>
-
-    <!-- UI JS file -->
     <script src="dist/photoswipe-ui-default.min.js"></script>
     <style>
         .page-container {
@@ -124,6 +114,15 @@
             </p>
             <div class="profile">
                 <div class="profile__item-container">
+                    <p class="profile__item-title">ALSECO.ZHER-KAZYNA</p>
+                    <p class="profile__item-text"> Система предназначена для автоматизации бизнес-процессов
+                        Государственного учреждения «Отдел земельных отношений» города Атырау.</p>
+                    <div class="profile__item-actions">
+                        <button onclick="openLink('https://zhk.alseco.kz')">Перейти</button>
+                        <button onclick="showScreenshots('zk')">Посмотреть скриншоты</button>
+                    </div>
+                </div>
+                <div class="profile__item-container">
                     <p class="profile__item-title">Smart JKH</p>
                     <p class="profile__item-text"> Система предназначена для автоматизации работы поставщиков услуг г.
                         Алматы в по процессу отправки форм корректировок № 33, 42, и выгрузке отчетов и актов.</p>
@@ -133,26 +132,14 @@
                     </div>
                 </div>
                 <div class="profile__item-container">
-                    <p class="profile__item-title">Smart JKH</p>
-                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
-                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
+                    <p class="profile__item-title">АлматыЭнергоСбыт Online. Приём заявок
+                    </p>
+                    <p class="profile__item-text"> Система предназначена для автоматизации приема заявок
+                        организации «АлматыЭнергоСбыт».</p>
                     <div class="profile__item-actions">
-                        <button onclick="openLink('https://smartportal.alseco.kz/')">Перейти</button>
-                        <button onclick="showScreenshots('zk')">Посмотреть скриншоты</button>
+                        <button onclick="openLink('https://aop.alseco.kz/request')">Перейти</button>
+                        <button onclick="showScreenshots('apo')">Посмотреть скриншоты</button>
                     </div>
-                </div>
-                <div class="profile__item-container">
-                    <p class="profile__item-title">Smart JKH</p>
-                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
-                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
-                </div>
-                <div class="profile__item-container">
-                    <p class="profile__item-title">Smart JKH</p>
-                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
-                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
                 </div>
             </div>
         </div>
@@ -228,20 +215,6 @@
         function showScreenshots(project) {
             var pswpElement = document.querySelectorAll('.pswp')[0];
 
-            // build items array
-            var items = [
-                {
-                    src: 'img/smartjkh/login.png',
-                    w: 1920,
-                    h: 920
-                },
-                {
-                    src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-                    w: 1024,
-                    h: 683
-                }
-            ];
-
             // define options (if needed)
             var options = {
                 // history & focus options are disabled on CodePen        
@@ -258,13 +231,108 @@
         }
         function getDynamicElements(project) {
             switch (project) {
+                case "apo":
+                    return [
+                        {
+                            "src": 'img/apo/1.png',
+                            w: 1920,
+                            h: 920
+                        }, {
+                            "src": 'img/apo/2.png',
+                            w: 1920,
+                            h: 920
+                        }, {
+                            "src": 'img/apo/3.png',
+                            w: 1920,
+                            h: 920
+                        }, {
+                            "src": 'img/apo/4.png',
+                            w: 1920,
+                            h: 920
+                        }, {
+                            "src": 'img/apo/5.png',
+                            w: 1920,
+                            h: 920
+                        }
+                    ]
                 case "zk":
                     return [{
-                        "src": 'img/smartjkh/sign_up.png',
-                        'subHtml': '<h4>Страница авторизации</h4>',
+                        "src": 'img/zk/-1.png',
                         w: 1920,
                         h: 920
-                    },];
+                    }, {
+                        "src": 'img/zk/0.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/1.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/2.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/3.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/4.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/5.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/6.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/7.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/8.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/9.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/10.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/11.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/12.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/13.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/14.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/15.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/16.png',
+                        w: 1920,
+                        h: 920
+                    }, {
+                        "src": 'img/zk/17.png',
+                        w: 1920,
+                        h: 920
+                    }];
                 case "smartjkh":
                     return [{
                         "src": 'img/smartjkh/login.png',
