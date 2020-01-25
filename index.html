@@ -137,6 +137,10 @@
                     <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
                         impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
                         cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
+                    <div class="profile__item-actions">
+                        <button onclick="openLink('https://smartportal.alseco.kz/')">Перейти</button>
+                        <button onclick="showScreenshots('zk')">Посмотреть скриншоты</button>
+                    </div>
                 </div>
                 <div class="profile__item-container">
                     <p class="profile__item-title">Smart JKH</p>
@@ -220,6 +224,7 @@
     </div>
 
     <script>
+        var pswpElement = document.querySelectorAll('.pswp')[0];
         function showScreenshots(project) {
             var pswpElement = document.querySelectorAll('.pswp')[0];
 
@@ -248,69 +253,91 @@
 
             };
 
-            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, getDynamicElements(project), options);
             gallery.init();
         }
         function getDynamicElements(project) {
             switch (project) {
+                case "zk":
+                    return [{
+                        "src": 'img/smartjkh/sign_up.png',
+                        'subHtml': '<h4>Страница авторизации</h4>',
+                        w: 1920,
+                        h: 920
+                    },];
                 case "smartjkh":
                     return [{
                         "src": 'img/smartjkh/login.png',
-                        'subHtml': '<h4>Страница авторизации</h4>'
+                        'subHtml': '<h4>Страница авторизации</h4>',
+                        w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/sign_up.png',
-                        'subHtml': '<h4>Страница регистрации</h4>'
+                        'subHtml': '<h4>Страница регистрации</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/reset_password.png',
-                        'subHtml': '<h4>Сброс пароля</h4>'
+                        'subHtml': '<h4>Сброс пароля</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/profile.png',
-                        'subHtml': '<h4>Страница профиля</h4>'
+                        'subHtml': '<h4>Страница профиля</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/forms_list.png',
-                        'subHtml': '<h4>Список форм текущего поставщика</h4>'
+                        'subHtml': '<h4>Список форм текущего поставщика</h4>', w: 1920,
+                        h: 920
                     },
 
                     {
                         "src": 'img/smartjkh/forms_filter.png',
-                        'subHtml': '<h4>Фильтр списка форм</h4>'
+                        'subHtml': '<h4>Фильтр списка форм</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/form_detail.png',
-                        'subHtml': '<h4>Детализация формы</h4>'
+                        'subHtml': '<h4>Детализация формы</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/many_form_rows.png',
-                        'subHtml': '<h4>Детализация формы</h4>'
+                        'subHtml': '<h4>Детализация формы</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/send_form_with_ecp.png',
-                        'subHtml': '<h4>Отправка формы с ЭЦП</h4>'
+                        'subHtml': '<h4>Отправка формы с ЭЦП</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/form_rejected.png',
-                        'subHtml': '<h4>Отклоненная форма</h4>'
+                        'subHtml': '<h4>Отклоненная форма</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/form_attached_files.png',
-                        'subHtml': '<h4>Прикрепленные файлы</h4>'
+                        'subHtml': '<h4>Прикрепленные файлы</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/forms_list_manager.png',
-                        'subHtml': '<h4>Список форм у принимающей стороны</h4>'
+                        'subHtml': '<h4>Список форм у принимающей стороны</h4>', w: 1920,
+                        h: 920
                     },
                     {
                         "src": 'img/smartjkh/form_detail_m_sended.png',
-                        'subHtml': '<h4>Отправленная форма</h4>'
+                        'subHtml': '<h4>Отправленная форма</h4>', w: 1920,
+                        h: 920
                     }
                         ,
                     {
                         "src": 'img/smartjkh/form_detail_m_accepted.png',
-                        'subHtml': '<h4>Принятая форма</h4>'
+                        'subHtml': '<h4>Принятая форма</h4>', w: 1920,
+                        h: 920
                     }
                     ]
 
