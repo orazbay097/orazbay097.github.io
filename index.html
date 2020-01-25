@@ -1,26 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Orazbay Ualesh</title>
-        <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
-        <style>
-            
-        </style>
-    </head>
-    <body >
 
-        <div>Hello world</div>
-    
-        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
-        <script>
-        </script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Orazbay Ualesh</title>
+    <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+    <style>
+        .page-container {
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 20px 50px;
+        }
+
+        .title {
+            padding: 10px;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .title_bordered {
+            border-bottom: 1px solid gray;
+        }
+
+        .section-first {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .section-first__title {
+            text-align: center;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+        }
+
+        .profile__item-container {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 15px
+        }
+
+        .profile__item-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .profile__item-text {
+            font-size: 20px;
+        }
+
+        .profile__item-actions {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .section {
+                padding: 10px 25px;
+            }
+
+            .title {
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .section-first {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .profile {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container" id="lightgallery">
+        <div class="section section-first">
+            <p class="title section-first__title">Здравствуйте, меня зовут Оразбай. Я программист-разработчик.</p>
+        </div>
+        <div class="section">
+            <p class="title title_bordered">
+                Проекты, в которых я участвовал
+            </p>
+            <div class="profile">
+                <div class="profile__item-container">
+                    <p class="profile__item-title">Smart JKH</p>
+                    <p class="profile__item-text"> Система предназначена для автоматизации работы поставщиков услуг г.
+                        Алматы в по процессу отправки форм корректировок № 33, 42, и выгрузке отчетов и актов.</p>
+                    <div class="profile__item-actions">
+                        <button onclick="openLink('https://smartportal.alseco.kz/')">Перейти</button>
+                        <button onclick="showScreenshots('smartjkh')">Посмотреть скриншоты</button>
+                    </div>
+                </div>
+                <div class="profile__item-container">
+                    <p class="profile__item-title">Smart JKH</p>
+                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
+                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
+                </div>
+                <div class="profile__item-container">
+                    <p class="profile__item-title">Smart JKH</p>
+                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
+                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
+                </div>
+                <div class="profile__item-container">
+                    <p class="profile__item-title">Smart JKH</p>
+                    <p class="profile__item-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                        impedit modi itaque voluptatibus alias mollitia delectus consectetur molestias, voluptas
+                        cupiditate odio maiores? Molestias rem ab modi minima dolorem vero delectus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+    <script>
+        function showScreenshots(project) {
+            lightGallery(document.getElementById('lightgallery'), {
+                dynamic: true,
+                dynamicEl: getDynamicElements(project)
+            })
+        }
+        function getDynamicElements(project) {
+            switch (project) {
+                case "smartjkh":
+                    return [{
+                        "src": 'img/smartjkh/login.png',
+                        'subHtml': '<h4>Страница авторизации</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/sign_up.png',
+                        'subHtml': '<h4>Страница регистрации</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/reset_password.png',
+                        'subHtml': '<h4>Сброс пароля</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/profile.png',
+                        'subHtml': '<h4>Страница профиля</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/forms_list.png',
+                        'subHtml': '<h4>Список форм текущего поставщика</h4>'
+                    },
+                    
+                    {
+                        "src": 'img/smartjkh/forms_filter.png',
+                        'subHtml': '<h4>Фильтр списка форм</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/form_detail.png',
+                        'subHtml': '<h4>Детализация формы</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/many_form_rows.png',
+                        'subHtml': '<h4>Детализация формы</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/send_form_with_ecp.png',
+                        'subHtml': '<h4>Отправка формы с ЭЦП</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/form_rejected.png',
+                        'subHtml': '<h4>Отклоненная форма</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/form_attached_files.png',
+                        'subHtml': '<h4>Прикрепленные файлы</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/forms_list_manager.png',
+                        'subHtml': '<h4>Список форм у принимающей стороны</h4>'
+                    },
+                    {
+                        "src": 'img/smartjkh/form_detail_m_sended.png',
+                        'subHtml': '<h4>Отправленная форма</h4>'
+                    }
+                    ,
+                    {
+                        "src": 'img/smartjkh/form_detail_m_accepted.png',
+                        'subHtml': '<h4>Принятая форма</h4>'
+                    }
+                ]
+            }
+        }
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
 </html>
