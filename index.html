@@ -40,8 +40,8 @@
         .profile {
             display: grid;
             grid-template-columns: repeat(3, 33.3%);
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
 
         }
 
@@ -81,8 +81,16 @@
             }
 
             .profile {
-                display: grid;
                 grid-template-columns: 100%;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 900px) {
+            .profile {
+                grid-template-columns: repeat(2, 50%);
                 grid-column-gap: 10px;
                 grid-row-gap: 10px;
 
@@ -144,6 +152,7 @@
     <script>
         function showScreenshots(project) {
             lightGallery(document.getElementById('lightgallery'), {
+                mobileSrc: true,
                 dynamic: true,
                 dynamicEl: getDynamicElements(project)
             })
@@ -171,7 +180,7 @@
                         "src": 'img/smartjkh/forms_list.png',
                         'subHtml': '<h4>Список форм текущего поставщика</h4>'
                     },
-                    
+
                     {
                         "src": 'img/smartjkh/forms_filter.png',
                         'subHtml': '<h4>Фильтр списка форм</h4>'
@@ -204,12 +213,13 @@
                         "src": 'img/smartjkh/form_detail_m_sended.png',
                         'subHtml': '<h4>Отправленная форма</h4>'
                     }
-                    ,
+                        ,
                     {
                         "src": 'img/smartjkh/form_detail_m_accepted.png',
                         'subHtml': '<h4>Принятая форма</h4>'
                     }
-                ]
+                    ]
+
             }
         }
         function openLink(url) {
