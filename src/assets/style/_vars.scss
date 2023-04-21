@@ -1,0 +1,30 @@
+:root {
+  --color-gray-0: #ffffff;
+  --color-gray-10: #fafafa;
+  --color-gray-100: #1f2626;
+
+  --color-violet: #5222d0;
+
+  --color-bg-light: var(--color-gray-10);
+
+  --color-text: var(--color-gray-100);
+
+  --color-primary: var(--color-violet);
+
+  --header-height: 48px;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 40px;
+  --space-7: 64px;
+
+  --container-side-margin: var(--space-7);
+  --container-max-width: 1440px;
+
+  @include tablet {
+    --header-height: 64px;
+  }
+}

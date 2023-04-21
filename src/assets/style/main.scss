@@ -1,0 +1,14 @@
+@import 'sanitize.css';
+
+@import 'vars';
+
+body {
+  @extend %typo-text-1;
+
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
