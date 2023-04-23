@@ -12,6 +12,8 @@
       <p :class="$style.description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti, animi et esse ipsa sapiente iusto ullam distinctio? Dicta facilis vero recusandae voluptatem culpa veniam voluptatibus sapiente cupiditate odit corrupti.
       </p>
+
+      <primary-button>Contact Me</primary-button>
     </div>
 
     <img :class="$style.img" src="/dev-img.png">
@@ -55,5 +57,9 @@
     order: 2;
     max-width: 50vw;
   }
+}
+
+.description {
+  margin-bottom: var(--space-4);
 }
 </style>

@@ -6,11 +6,11 @@
       </nuxt-link>
 
       <nuxt-link :class="$style.projectsLink" to="/">
-        Projects
+        About me
       </nuxt-link>
 
       <nuxt-link to="/">
-        Contacts
+        Projects
       </nuxt-link>
     </div>
   </header>
