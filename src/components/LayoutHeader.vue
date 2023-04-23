@@ -23,7 +23,6 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: aqua;
 
 }
 
@@ -38,5 +37,6 @@
 
 .projectsLink {
   margin-left: auto;
+  margin-right: var(--space-2);
 }
 </style>

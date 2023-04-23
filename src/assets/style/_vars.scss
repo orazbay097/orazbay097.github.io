@@ -21,10 +21,11 @@
   --space-6: 40px;
   --space-7: 64px;
 
-  --container-side-margin: var(--space-7);
+  --container-side-margin: var(--space-4);
   --container-max-width: 1440px;
 
   @include tablet {
     --header-height: 64px;
+    --container-side-margin: var(--space-7);
   }
 }
