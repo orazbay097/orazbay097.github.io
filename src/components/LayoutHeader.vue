@@ -18,12 +18,7 @@
 
 <style lang="scss" module>
 .wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: var(--header-height);
-
 }
 
 .content {

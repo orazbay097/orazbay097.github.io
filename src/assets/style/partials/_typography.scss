@@ -28,6 +28,21 @@
   }
 }
 
+%typo-heading-3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
 %typo-text-1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -41,5 +56,21 @@
 
   @include desktop {
     font-size: 20px;
+  }
+}
+
+%typo-text-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.12em;
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include desktop {
+    font-size: 14px;
   }
 }
