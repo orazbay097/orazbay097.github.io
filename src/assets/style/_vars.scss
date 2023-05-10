@@ -4,11 +4,13 @@
   --color-gray-50: #777777;
   --color-gray-90: #d7d6d6;
   --color-gray-100: #1f2626;
+  --color-gray-100--rgb: 26, 26, 26;
 
   --color-violet: #5222d0;
   --color-violet-dark: #201049;
 
   --color-bg-light: var(--color-gray-10);
+  --color-overlay: rgba(var(--color-gray-100--rgb), 0.5);
 
   --color-text: var(--color-gray-100);
   --color-text-light: var(--color-gray-0);

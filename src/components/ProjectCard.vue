@@ -1,6 +1,10 @@
 <template>
   <div :class="$style.wrapper">
-    <img :src="project.images[0]" :class="$style.img">
+    <images-viewer :images="project.images">
+      <template #activator="{ onClick }">
+        <img :src="project.images[0]" :class="$style.img" @click="onClick">
+      </template>
+    </images-viewer>
 
     <h3 :class="$style.title">
       {{ project.title }}
@@ -27,7 +31,7 @@ defineProps<{project: Project}>()
   background: var(--color-gray-0);
   box-shadow: 2px 2px 32px rgba(40, 38, 44, 0.15);
   border-radius: 6px;
-  padding: var(--space-2);
+  padding: var(--space-3);
 }
 
 .title {
@@ -43,12 +47,13 @@ defineProps<{project: Project}>()
 .img {
   max-width: 100%;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .stackContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: var(--space-1);
 }
 
 .chip {

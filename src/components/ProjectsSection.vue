@@ -20,7 +20,7 @@ const projectsList: Project[] = [
     title: 'AinewsMetrics',
     description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
     stack: ['Vue 3', 'Typescript', 'Pinia', 'Vue 3', 'Typescript', 'Pinia', 'Vue 3', 'Typescript', 'Pinia'],
-    images: ['/ainews-metrics-1.png', '/ainews-metrics-1.png']
+    images: ['/ainews-metrics-1.png', '/ainews-metrics-2.png']
   },
   {
     title: 'AinewsMetrics',
@@ -63,7 +63,7 @@ const projectsList: Project[] = [
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-3);
+    gap: var(--space-4);
   }
 
   @include desktop {
