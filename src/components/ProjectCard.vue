@@ -1,10 +1,10 @@
 <template>
   <div :class="$style.wrapper">
-    <images-viewer :images="project.images">
+    <images-slider :images="project.images">
       <template #activator="{ onClick }">
         <img :src="project.images[0]" :class="$style.img" @click="onClick">
       </template>
-    </images-viewer>
+    </images-slider>
 
     <h3 :class="$style.title">
       {{ project.title }}
