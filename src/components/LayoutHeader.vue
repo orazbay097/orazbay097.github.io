@@ -1,24 +1,26 @@
 <template>
   <header :class="$style.wrapper">
     <div :class="$style.content">
-      <nuxt-link to="/">
-        Home
-      </nuxt-link>
+      <a href="https://github.com/orazbay097" target="_blank" :class="$style.link">
+        <icon-logo-github :class="$style.icon" />
+      </a>
 
-      <nuxt-link :class="$style.projectsLink" to="/">
-        About me
-      </nuxt-link>
-
-      <nuxt-link to="/">
-        Projects
-      </nuxt-link>
+      <a href="https://www.linkedin.com/in/orazbay-ualesh/" target="_blank" :class="$style.link">
+        <icon-logo-linkedin :class="$style.icon" />
+      </a>
     </div>
   </header>
 </template>
 
 <style lang="scss" module>
 .wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-light);
   height: var(--header-height);
+  z-index: 1;
 }
 
 .content {
@@ -28,10 +30,21 @@
   padding: 0 var(--container-side-margin);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
 }
 
-.projectsLink {
-  margin-left: auto;
-  margin-right: var(--space-2);
+.link:hover, .link:active {
+  color: var(--color-primary);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  @include tablet {
+    width: 32px;
+    height: 32px;
+  }
 }
 </style>

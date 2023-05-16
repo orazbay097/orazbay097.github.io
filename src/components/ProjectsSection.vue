@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.wrapper">
+  <section id="projects" :class="$style.wrapper">
     <h2 :class="$style.title">
       Projects
     </h2>
@@ -52,7 +52,7 @@ const projectsList: Project[] = [
 
 <style lang="scss" module>
 .wrapper {
-  padding: var(--space-3) 0;
+  padding: var(--space-4) 0;
 }
 
 .list {
@@ -72,6 +72,14 @@ const projectsList: Project[] = [
 }
 
 .title {
-  @extend %typo-heading-2;
+  @extend %typo-heading-3;
+
+  position: sticky;
+  top: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: fit-content;
 }
 </style>

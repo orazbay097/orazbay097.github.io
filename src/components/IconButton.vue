@@ -14,7 +14,7 @@
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
-  padding: var(--space-2);
+  padding: var(--space-1);
   outline: none;
   border: none;
 

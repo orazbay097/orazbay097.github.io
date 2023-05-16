@@ -2,6 +2,10 @@
 
 @import 'vars';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend %typo-text-1;
 
@@ -12,25 +16,5 @@ body {
 a {
   color: var(--color-text);
   display: inline-block;
-  position: relative;
   text-decoration: none;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    top: 120%;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  &:active::after, &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 }

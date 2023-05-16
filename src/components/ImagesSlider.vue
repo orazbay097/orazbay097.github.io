@@ -98,8 +98,13 @@ const handleSlideChage = (index: number) => {
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+
+  @include tablet {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .buttonNext, .buttonPrev {
