@@ -62,7 +62,6 @@ const projectsList: Project[] = [
     previewImage: '/zherkazyna.jpg',
     images: ['/zherkazyna-8.jpg', '/zherkazyna-2.jpg', '/zherkazyna-3.jpg', '/zherkazyna-4.jpg', '/zherkazyna-5.jpg', '/zherkazyna-6.jpg', '/zherkazyna-7.jpg', '/zherkazyna-1.jpg']
   }
-
 ]
 
 </script>

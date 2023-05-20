@@ -1,42 +1,12 @@
-# Nuxt 3 Minimal Starter
+# Orazbay Ualesh's Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to the GitHub repository of my personal portfolio! As a frontend developer, this portfolio represents a showcase of my work, skills, and accomplishments in the world of web development.
 
-## Setup
+## Technology Stack
 
-Make sure to install the dependencies:
+This portfolio website is built with:
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- HTML
+- CSS
+- TypeScript
+- Nuxt 3
