@@ -10,16 +10,16 @@
       </h1>
 
       <p :class="$style.description">
-        With over 5 years of experience in software development, I have completed <a>projects</a> that have contributed significantly to my previous employers' revenue and client growth.
+        With over 5 years of experience in software development, I have completed projects that have contributed significantly to my previous employers' revenue and client growth.
         Let's work together and create something amazing!
       </p>
 
       <!-- <primary-button>Contact me</primary-button> -->
     </div>
 
-    <img :class="$style.img" src="/dev-img.png">
+    <img :class="$style.img" src="/dev-img.png" alt="title image">
 
-    <nuxt-link to="#projects" :class="$style.scrollDownLink">
+    <nuxt-link to="#projects" aria-label="Scroll down" :class="$style.scrollDownLink">
       <icon-chevron-down />
     </nuxt-link>
   </section>
@@ -66,8 +66,9 @@
 
   @include desktop {
     order: 2;
+    width: 100%;
     max-width: 50vw;
-    max-height: none;
+    max-height: 400px;
   }
 }
 

@@ -1,11 +1,11 @@
 <template>
   <header :class="$style.wrapper">
     <div :class="$style.content">
-      <a href="https://github.com/orazbay097" target="_blank" :class="$style.link">
+      <a href="https://github.com/orazbay097" aria-label="Github profile" target="_blank" :class="$style.link">
         <icon-logo-github :class="$style.icon" />
       </a>
 
-      <a href="https://www.linkedin.com/in/orazbay-ualesh/" target="_blank" :class="$style.link">
+      <a href="https://www.linkedin.com/in/orazbay-ualesh/" aria-label="Linkedin profile" target="_blank" :class="$style.link">
         <icon-logo-linkedin :class="$style.icon" />
       </a>
     </div>
