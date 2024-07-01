@@ -1,25 +1,31 @@
 <template>
   <section :class="$style.wrapper">
     <div :class="$style.titleContainer">
-      <h2 :class="$style.subtitle">
-        Hi, my name is Orazbay
-      </h2>
+      <h2 :class="$style.subtitle">Hi, my name is Orazbay</h2>
 
       <h1 :class="$style.title">
         I am a <span>front&#8209;end developer</span>
       </h1>
 
       <p :class="$style.description">
-        With over 5 years of experience in software development, I have completed projects that have contributed significantly to my previous employers' revenue and client growth.
-        Let's work together and create something amazing!
+        With over 6 years of experience in software development, I have
+        completed projects that have contributed significantly to my previous
+        employers' revenue and client growth. Let's work together and create
+        something amazing!
       </p>
 
       <!-- <primary-button>Contact me</primary-button> -->
     </div>
 
-    <img :class="$style.img" src="/dev-img.png" alt="title image">
+    <img
+      :class="$style.img"
+      src="/dev-img.png"
+      alt="title image" />
 
-    <nuxt-link to="#projects" aria-label="Scroll down" :class="$style.scrollDownLink">
+    <nuxt-link
+      to="#projects"
+      aria-label="Scroll down"
+      :class="$style.scrollDownLink">
       <icon-chevron-down />
     </nuxt-link>
   </section>
@@ -48,7 +54,7 @@
 
   span {
     color: var(--color-primary);
-    text-decoration: none
+    text-decoration: none;
   }
 }
 
@@ -107,17 +113,17 @@
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   50% {
     -webkit-transform: translateY(-15px);
-    transform: translateY(-15px)
+    transform: translateY(-15px);
   }
 
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 </style>
